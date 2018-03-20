@@ -2,7 +2,7 @@ require 'sqlite3'
 
 
 DB = {:conn => SQLite3::Database.new("db/cars.db")}
-DB[:conn].execute("DROP TABLE IF EXISTS songs")
+DB[:conn].execute("DROP TABLE IF EXISTS cars")
 sql = <<-SQL
   CREATE TABLE IF NOT EXISTS cars (
   id INTEGER PRIMARY KEY,
