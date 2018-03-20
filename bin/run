@@ -8,7 +8,7 @@ require_relative "../config/environment.rb"
 mustang = Car.new(color: "BLUE", year: "1995")
 puts "song name: " + mustang.color
 puts "song album: " + mustang.year
-car.save
+mustang.save
 
 puts Car.find_by_name("BLUE")
 
